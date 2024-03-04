@@ -22,7 +22,7 @@ class MessageTests {
 
         assertEquals(
             [
-                "he cmd 0xDEAD 0xBEEF 0xe004 0x0 {7B 22 73 74 75 64 79 22 3A 30}"
+                "he cmd 0xDEAD 0xBEEF 0xe004 0x0 {7B 22 73 74 75 64 79 22 3A 30 7D}"
             ],
             driver.sentCommands,
         )

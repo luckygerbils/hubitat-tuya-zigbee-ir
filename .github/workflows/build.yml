@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: wtfjoke/setup-groovy
+      - uses: wtfjoke/setup-groovy@v2
         with:
           groovy-version: '2.4.16'
       - run: groovy -cp tst tst/all.groovy

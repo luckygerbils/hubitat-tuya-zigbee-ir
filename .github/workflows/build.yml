@@ -1,0 +1,14 @@
+name: Build and release
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wtfjoke/setup-groovy
+        with:
+          groovy-version: '2.4.16'
+      - run: groovy -cp tst tst/all.groovy
